@@ -1,0 +1,28 @@
+{
+  "name": "chatroom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shruthi019/chatroom.git"
+  },
+  "author": "Shruthi Rao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shruthi019/chatroom/issues"
+  },
+  "homepage": "https://github.com/shruthi019/chatroom#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "socket.io": "^3.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
