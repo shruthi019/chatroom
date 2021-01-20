@@ -18,4 +18,14 @@ const io = socketio(server)
 
 io.on('connection', socket => {
     console.log("New user connected")
+    socket.username = "Anon"
+    socket.on('change_username', data => {
+        socket.username = data.username
+    })
+
+    // handle new message event
+    socket.on('new_message', data => {
+        console.log('New message')
+        io.sockets.emit('receive_message', {message: data.message, username: socket.username})
+    })
 })
