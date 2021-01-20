@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Chatroom</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Chat with your friends in real time!</h1>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Anon</div>
+            <div class="card-body">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="username" placeholder="Change your username">
+                    <div class="input-group-append">
+                        <button class="btn btn-warning" type="button" id="usernameButton">Change</button>
+                    </div>
+                </div>
+            </div>
+            <div class="message-box">
+                <ul class="list-group list-group-flush" id="message-list">
+                </ul>
+                <div class="info"></div>
+            </div>
+            <div class="card-footer">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="message" placeholder="Send new message">
+                    <div class="input-group-append">
+                        <button class="btn btn-success" type="button" id="messageButton">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.0/socket.io.js"></script>
+    <script src="/js/chatroom.js"></script>
+</body>
